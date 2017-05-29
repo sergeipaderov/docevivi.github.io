@@ -79,15 +79,13 @@ hr {
 /* headerwrap */
 
 #headerwrap {
-    background: url("../img/header_bg2.jpg") no-repeat center top;
+    background: url("../img/main/header_bg2.jpg") no-repeat center top;
     margin-top: -10px;
     padding-top: 20px;
-    text-align: center;
-    background-attachment: relative;
     background-position: center center;
     min-height: 675px;
     width: 100%;
-    background-size: 100%;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -95,7 +93,7 @@ hr {
 }
 
 #headerwrap h1 {
-    margin-top: 50px;
+    margin-top: 30px;
     color: black;
     font-size: 70px;
     font-weight: 500;
@@ -105,14 +103,13 @@ hr {
 #headerwrap h1,h2 {
     margin-right: 650px;
     color:  #442200;
+    text-align: left;
 }
+
+/* Assortiment */
 
 .range {
     padding-top: 35px;
-}
-
-.range h4 {
-    font-size: 
 }
 
 /* examples */
@@ -131,10 +128,6 @@ hr {
 
 #examples h4{
 font-size: 40px;
-}
-
-#examples img {
-    width: 250px;
 }
 
 /* Slider */
@@ -156,7 +149,7 @@ ul.acco {
 }
 
 ul.acco li {
-    width: 140px;
+    width: 115px;
     overflow: hidden;
     padding: 1px 1px 0;
     cursor: pointer;
@@ -172,11 +165,11 @@ ul.acco li {
 }
 
 ul.acco img {
-    width: 300px;
+    width: 450px;
 }
 
 ul.acco  li:hover {
-    width: 300px;
+    width: 450px;
     -webkit-box-shadow: 1px 2px 15px #424241;
     box-shadow: 1px 2px 15px #424241;
     -webkit-transition:  all 1s;
@@ -187,7 +180,7 @@ ul.acco  li:hover {
 }
 
 ul.acco li:nth-child(4) {
-    width: 300px;
+    width: 450px;
 }
 
 ul.acco:hover li:nth-child(4) {
@@ -195,7 +188,7 @@ ul.acco:hover li:nth-child(4) {
 }
 
 ul.acco li:nth-child(4):hover {
-    width: 300px;
+    width: 450px;
 }
 
 ul.acco li:first-child {
@@ -207,15 +200,19 @@ ul.acco li:last-child {
 
 /* Description */
 
+.description {
+    padding-bottom: 40px;
+}
+
 .h1-description  {
     letter-spacing:  2px;
     margin-bottom: 40px;
     margin-top: 30px;
 }
 
-.img-description {
+.description-text {
     position: relative;
-    background-size: 100%; 
+    background-size: cover; 
     width: 360px;
     height: 240px;
     padding: 0;
@@ -225,13 +222,23 @@ ul.acco li:last-child {
     margin-bottom: 20px;
     background-position: center;
     transition: 0.5s;
+    overflow: hidden;
 }
 
-.img-description:hover {
-    background-size: 110%;
+.description-img {
+    max-width: 100%;
+    height: auto;
+    transition: 0.5s ease;
 }
 
-.img-description:after {
+.description-text:hover img{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform:  scale(1.1);
+}
+
+.description-text:after {
     position: absolute;
     content: attr(data-text);
     top: 0;
@@ -248,7 +255,7 @@ ul.acco li:last-child {
     border-radius: 8px;
 }
 
-.img-description:hover:after {
+.description-text:hover:after {
     opacity: 1;
 }
 
@@ -260,15 +267,14 @@ ul.acco li:last-child {
 /* footerwrap*/
 
 #footerwrap {
-    background: url("../img/pineapples3.jpg") no-repeat center top;
+    background: url("../img/main/pineapples3.jpg") no-repeat center top;
     margin-top: -10px;
     padding-top: 20px;
     text-align: center;
-    background-attachment: relative;
     background-position: center center;
     min-height: 675px;
     width: 100%;
-    background-size: 100%;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
