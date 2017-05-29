@@ -274,7 +274,6 @@ ul.acco li:last-child {
     background-position: center center;
     min-height: 675px;
     width: 100%;
-    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -306,10 +305,16 @@ ul.acco li:last-child {
     height: 50px;
 }
 
-.social-icon {
+.social-icon, .navbar-text{
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.navbar-text p {
+    display: inline;
+    text-align: left;
+    color: #7F7669;
 }
 
 .social-icon li{
