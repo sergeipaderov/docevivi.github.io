@@ -36,6 +36,7 @@ a:hover, a:focus {
     color: #7b7b7b;
     text-decoration: none;
     outline: 0;
+    transition: 0.6s ease;
 }
 
 hr {
@@ -63,6 +64,11 @@ hr {
 
 .navbar-inverse .navbar-nav > .active > a {
     background-color: #4F2F00;
+}
+
+.navbar-inverse .navbar-nav > li a {
+    text-transform: uppercase;
+}
 }
 
 .navbar-inverse .navbar-brand {
@@ -302,7 +308,7 @@ ul.acco li:last-child {
     bottom: 0;
     padding-top: 8px;
     width: 100%;
-    height: 50px;
+    height: 55px;
 }
 
 .social-icon, .navbar-text{
@@ -314,9 +320,13 @@ ul.acco li:last-child {
 .navbar-text p {
     display: inline;
     text-align: left;
-    color: #7F7669;
+    color: #7F7669;    
 }
 
+.navbar-text p:hover {
+    color: #fff;
+    transition: 1s ease;
+}
 .social-icon li{
     display: inline-block;
     text-align: center;
@@ -324,11 +334,12 @@ ul.acco li:last-child {
 
 .social-icon a {
     display: block;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
+    width: 37px;
+    height: 37px;
+    line-height: 30px;
     border-radius: 50%;
     margin-right: 5px;
+    padding-top: 3px;
 }
 
 .social-icon a {
@@ -338,5 +349,92 @@ ul.acco li:last-child {
 
 .social-icon a:hover {
     background: #4F2F00; 
-    color: #f2f2f2; 
+    color: #f2f2f2;
+    transition: 1s ease; 
+}
+
+
+/* -------SWEETS------- */
+
+/* sweets*/
+
+.sweets {
+    background: url("../img/sweets/1.jpg") no-repeat center top;
+    margin-top: -10px;
+    padding-top: 20px;
+    background-position: center center;
+    min-height: 675px;
+    width: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.sweets .sweets_title {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 70px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color:  #442200;
+}
+
+.sweets_list {
+    padding: 45px 150px;
+}
+
+.sweets-text {
+    position: relative;
+    background-size: cover; 
+    width: 320px;
+    height: 240px;
+    padding: 0;
+    border-radius: 8px;
+    -webkit-box-shadow: 1px 1px 15px #7e807e;
+    box-shadow: 2px 2px 20px #000;
+    margin-bottom: 40px;
+    background-position: center;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.sweets-img {
+    max-width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+}
+
+.sweets-text:hover img{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform:  scale(1.1);
+}
+
+.sweets-text:after {
+    position: absolute;
+    content: attr(data-text);
+    top: 83%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    white-space: pre-wrap;
+    overflow: hidden;
+    background-color:rgba(0,0,0,0.7);
+    color: #fff;
+    padding: 2px 15px;
+    transition: 0.4s;
+    border-radius: 8px;
+}
+
+.sweets-text:hover:after {
+    top: 0;
+}
+
+.sweets-text:first-line {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
 }
