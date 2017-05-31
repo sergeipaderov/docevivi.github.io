@@ -219,8 +219,6 @@ ul.acco li:last-child {
 .description-text {
     position: relative;
     background-size: cover; 
-    width: 360px;
-    height: 240px;
     padding: 0;
     border-radius: 8px;
     -webkit-box-shadow: 1px 1px 15px #7e807e;
@@ -388,8 +386,6 @@ ul.acco li:last-child {
 .sweets-text {
     position: relative;
     background-size: cover; 
-    width: 320px;
-    height: 240px;
     padding: 0;
     border-radius: 8px;
     -webkit-box-shadow: 1px 1px 15px #7e807e;
@@ -411,6 +407,8 @@ ul.acco li:last-child {
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     -ms-transform:  scale(1.1);
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .sweets-text:after {
@@ -426,7 +424,7 @@ ul.acco li:last-child {
     color: #fff;
     padding: 2px 15px;
     transition: 0.4s;
-    border-radius: 8px;
+    border-radius: 8px 8px 6px 6px;
 }
 
 .sweets-text:hover:after {
