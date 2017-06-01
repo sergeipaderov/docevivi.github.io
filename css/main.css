@@ -16,7 +16,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
     margin-top: 70px;
-    margin-bottom: 55px;
+    margin-bottom: 52px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -101,7 +101,7 @@ hr {
     bottom: 0;
     padding-top: 8px;
     width: 100%;
-    height: 55px;
+    height: 52px;
 }
 
 .social-icon, .navbar-text{
@@ -522,7 +522,7 @@ ul.acco li:last-child {
     margin-top: -10px;
     padding-top: 20px;
     background-position: center center;
-    min-height: 620px;
+    min-height: 623px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
